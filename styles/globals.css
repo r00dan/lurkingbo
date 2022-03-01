@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'LeagueGothic';
+  src: url('../public/fonts/LeagueGothic-Regular.ttf');
+}
+
 html,
 body {
   padding: 0;
