@@ -24,6 +24,19 @@
   text-align: center;
 }
 
+.main__socialList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__social {
+  font-family: 'Hubballi';
+  font-size: 2rem;
+  color: #eee;
+  margin: 0 .5rem;
+}
+
 .footer {
   width: 100%;
   display: flex;

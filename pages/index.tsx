@@ -1,6 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { Social } from '../components/Social/Social'
+
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -14,6 +16,28 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.main__title}>Bogdan Rudenko</h1>
+        <div className={styles.main__socialList}>
+          <Social
+            to='https://gitlab.com/roodan'
+          >
+            <div className={styles.main__social}>Gitlab</div>
+          </Social>
+          <Social
+            to='https://github.com/r00dan'
+          >
+            <div className={styles.main__social}>Github</div>
+          </Social>
+          <Social
+            to='https://hh.ru/resume/dc8bc19aff0245db4f0039ed1f633854625376'
+          >
+            <div className={styles.main__social}>HH</div>
+          </Social>
+          <Social
+            to='https://career.habr.com/m74g'
+          >
+            <div className={styles.main__social}>Career.Habr</div>
+          </Social>
+        </div>
       </main>
       <footer className={styles.footer}>
         <a

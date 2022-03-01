@@ -3,6 +3,11 @@
   src: url('../public/fonts/LeagueGothic-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'Hubballi';
+  src: url('../public/fonts/Hubballi-Regular.ttf');
+}
+
 html,
 body {
   padding: 0;
