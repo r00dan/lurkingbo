@@ -19,12 +19,12 @@ const Home: NextPage = () => {
         <h1 className={styles.main__title}>Bogdan Rudenko</h1>
         <h2 className={styles.main__subtitle}>Frontend Developer</h2>
         <div className={styles.main__skills}>
-          <Skill name={Skills.APOLLO} />
-          <Skill name={Skills.DOCKER} />
-          <Skill name={Skills.GRAPHQL} />
+          <Skill name={Skills.TYPESCRIPT} />
           <Skill name={Skills.REACT} />
           <Skill name={Skills.SASS} />
-          <Skill name={Skills.TYPESCRIPT} />
+          <Skill name={Skills.GRAPHQL} />
+          <Skill name={Skills.APOLLO} />
+          <Skill name={Skills.DOCKER} />
         </div>
         <div className={styles.main__socialList}>
           <Social
@@ -46,6 +46,11 @@ const Home: NextPage = () => {
             to='https://career.habr.com/m74g'
           >
             <div className={styles.main__social}>Career.Habr</div>
+          </Social>
+          <Social
+            to='https://geekjob.ru/gXHC'
+          >
+            <div className={styles.main__social}>GeekJob</div>
           </Social>
         </div>
       </main>
