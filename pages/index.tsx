@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Skill, { Skills } from '../components/Skill/Skill'
 import { Social } from '../components/Social/Social'
 
 import styles from '../styles/Home.module.css'
@@ -16,6 +17,15 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.main__title}>Bogdan Rudenko</h1>
+        <h2 className={styles.main__subtitle}>Frontend Developer</h2>
+        <div className={styles.main__skills}>
+          <Skill name={Skills.APOLLO} />
+          <Skill name={Skills.DOCKER} />
+          <Skill name={Skills.GRAPHQL} />
+          <Skill name={Skills.REACT} />
+          <Skill name={Skills.SASS} />
+          <Skill name={Skills.TYPESCRIPT} />
+        </div>
         <div className={styles.main__socialList}>
           <Social
             to='https://gitlab.com/roodan'

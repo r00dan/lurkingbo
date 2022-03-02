@@ -1,0 +1,16 @@
+.skill {
+  width: 96px;
+  height: 96px;
+  border-radius: .75rem;
+  background-color: #4b4b4b;
+  border: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: .75rem;
+  margin-top: .75rem;
+}
+
+.skill:last-child {
+  margin-right: 0;
+}

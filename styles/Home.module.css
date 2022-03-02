@@ -17,8 +17,21 @@
 
 .main__title {
   font-size: 6rem;
+  margin: 0;
+  margin-bottom: 1rem;
   color: #eee;
-  font-family: 'LeagueGothic';
+  font-family: 'Rubik';
+  text-transform: uppercase;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.main__subtitle {
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #eee;
+  font-family: 'Hubballi';
   text-transform: uppercase;
   word-wrap: break-word;
   text-align: center;
@@ -32,9 +45,15 @@
 
 .main__social {
   font-family: 'Hubballi';
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #eee;
   margin: 0 .5rem;
+}
+
+.main__skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .footer {
