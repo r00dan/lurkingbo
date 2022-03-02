@@ -3,7 +3,6 @@
   min-height: 100vh;
   padding: 0 2rem;
   position: relative;
-  overflow: hidden;
 }
 
 .main {
@@ -38,11 +37,13 @@
 }
 
 .main__socialList {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   margin-top: 4rem;
+  overflow-x: hidden;
 }
 
 .main__social {
@@ -50,6 +51,11 @@
   font-size: 1.7rem;
   color: #eee;
   margin: 0 .5rem;
+  cursor: pointer;
+}
+
+.main__social:hover {
+  text-decoration: underline;
 }
 
 .main__skills {
@@ -97,11 +103,15 @@
   }
 
   .main__socialList {
-    flex-direction: column;
     margin-top: 1rem;
   }
 
   .main__social {
-    margin: .25rem 0;
+    margin: .5rem;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    background-color: #212427;
+    border: 1px solid #eee;
+    border-radius: 45px;
   }
 }

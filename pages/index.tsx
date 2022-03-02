@@ -52,6 +52,11 @@ const Home: NextPage = () => {
           >
             <div className={styles.main__social}>GeekJob</div>
           </Social>
+          <Social
+            to='https://www.linkedin.com/in/bogdan-rudenko-143698108/'
+          >
+            <div className={styles.main__social}>LinkedIn</div>
+          </Social>
         </div>
       </main>
       <footer className={styles.footer}>
