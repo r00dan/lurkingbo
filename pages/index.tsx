@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>@LURKINGBO</title>
+        <title>Bogdan Rudenko</title>
         <meta name="description" content="Genius nextjs app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
