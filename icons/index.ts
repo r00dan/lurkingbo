@@ -4,6 +4,7 @@ import GraphqlIcon from './graphql.svg';
 import ReactIcon from './react.svg';
 import SassIcon from './sass.svg';
 import TypescriptIcon from './typescript.svg';
+import NodejsIcon from './nodejs.svg';
 
 export {
   ApolloIcon,
@@ -12,4 +13,5 @@ export {
   ReactIcon,
   SassIcon,
   TypescriptIcon,
+  NodejsIcon,
 };

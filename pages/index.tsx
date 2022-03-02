@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import Skill, { Skills } from '../components/Skill/Skill'
 import { Social } from '../components/Social/Social'
 
@@ -11,11 +12,18 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>Bogdan Rudenko</title>
-        <meta name="description" content="Genius nextjs app" />
+        <meta name="description" content="Genius NextJS app🌚" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
+        <div className={styles.main__avatar} >
+          <Image
+            src='/avatar.jpg'
+            alt="avatar"
+            layout='fill'
+          />
+        </div>
         <h1 className={styles.main__title}>Bogdan Rudenko</h1>
         <h2 className={styles.main__subtitle}>Frontend Developer</h2>
         <div className={styles.main__skills}>
@@ -25,6 +33,7 @@ const Home: NextPage = () => {
           <Skill name={Skills.GRAPHQL} />
           <Skill name={Skills.APOLLO} />
           <Skill name={Skills.DOCKER} />
+          <Skill name={Skills.NODEJS} />
         </div>
         <div className={styles.main__socialList}>
           <Social
@@ -57,6 +66,12 @@ const Home: NextPage = () => {
           >
             <div className={styles.main__social}>LinkedIn</div>
           </Social>
+        </div>
+        <div className={styles.main__cvlinks}>
+          Download my CV in{' '}
+          <Link href='/CV.pdf'>RU</Link>
+          {' '}|{' '}
+          <Link href='#'>EN</Link>
         </div>
       </main>
       <footer className={styles.footer}>

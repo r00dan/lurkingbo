@@ -3,6 +3,12 @@
   min-height: 100vh;
   padding: 0 2rem;
   position: relative;
+  overflow-x: hidden;
+}
+
+.logo {
+  margin-left: .75rem;
+  margin-top: .5rem;
 }
 
 .main {
@@ -12,6 +18,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.main__avatar {
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  position: relative;
+  border: 2px solid #eee;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.main__avatar:hover {
+  border-color: hotpink;
 }
 
 .main__title {
@@ -55,6 +75,7 @@
 }
 
 .main__social:hover {
+  color: hotpink;
   text-decoration: underline;
 }
 
@@ -63,6 +84,13 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 2rem;
+}
+
+.main__cvlinks {
+  font-family: 'Hubballi';
+  font-size: 1.7rem;
+  color: #eee;
+  margin-top: 1rem;
 }
 
 .footer {
@@ -87,14 +115,28 @@
 }
 
 @media (max-width: 600px) {
+  .main {
+    padding: 1rem 0;
+    margin-bottom: 4rem;
+  }
+
+  .footer {
+    padding: 1rem;
+  }
+
   .main__title {
     font-size: 2rem;
+  }
+
+  .main__avatar {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 1rem;
   }
 
   .main__subtitle {
     font-size: 1.5rem;
     margin: 0;
-    margin-bottom: 1rem;
     color: #eee;
     font-family: 'Hubballi';
     text-transform: uppercase;
@@ -102,16 +144,27 @@
     text-align: center;
   }
 
+  .main__skills {
+    margin-top: 1rem;
+  }
+
   .main__socialList {
     margin-top: 1rem;
   }
 
   .main__social {
-    margin: .5rem;
+    margin: .35rem;
     font-size: 1rem;
     padding: .5rem 1rem;
     background-color: #212427;
     border: 1px solid #eee;
     border-radius: 45px;
+  }
+
+  .main__cvlinks {
+    font-family: 'Hubballi';
+    font-size: 1.2rem;
+    color: #eee;
+    margin-top: 1rem;
   }
 }

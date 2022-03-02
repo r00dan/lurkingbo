@@ -5,7 +5,8 @@ import {
   GraphqlIcon,
   ReactIcon,
   SassIcon,
-  TypescriptIcon
+  TypescriptIcon,
+  NodejsIcon,
 } from '../../icons';
 
 import classes from './Skill.module.css';
@@ -17,6 +18,7 @@ export enum Skills {
   REACT = 'react',
   SASS = 'sass',
   TYPESCRIPT = 'typescript',
+  NODEJS = 'nodejs',
 }
 
 type SkillType = Record<Skills, StaticImageData>;
@@ -28,12 +30,15 @@ const skills: SkillType = {
   [Skills.REACT]: ReactIcon,
   [Skills.SASS]: SassIcon,
   [Skills.TYPESCRIPT]: TypescriptIcon,
+  [Skills.NODEJS]: NodejsIcon,
 }
 
 export default function Skill({ name }: { name: Skills }) {
   return (
     <div className={classes.skill}>
-      <Image width={64} height={64} src={skills[name]} alt="skill" />
+      <div className={classes.skill__wrapper}>
+        <Image layout='fill' src={skills[name]} alt="skill" />
+      </div>
     </div>
   );
 }
