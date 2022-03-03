@@ -26,6 +26,12 @@ const Home: NextPage = () => {
         </div>
         <h1 className={styles.main__title}>Bogdan Rudenko</h1>
         <h2 className={styles.main__subtitle}>Frontend Developer</h2>
+        <div className={styles.main__cvlinks}>
+          Download my CV in{' '}
+          <Link href='/CV.pdf'>RU</Link>
+          {' '}|{' '}
+          <Link href='#'>EN</Link>
+        </div>
         <div className={styles.main__skills}>
           <Skill name={Skills.TYPESCRIPT} />
           <Skill name={Skills.REACT} />
@@ -66,12 +72,6 @@ const Home: NextPage = () => {
           >
             <div className={styles.main__social}>LinkedIn</div>
           </Social>
-        </div>
-        <div className={styles.main__cvlinks}>
-          Download my CV in{' '}
-          <Link href='/CV.pdf'>RU</Link>
-          {' '}|{' '}
-          <Link href='#'>EN</Link>
         </div>
       </main>
       <footer className={styles.footer}>

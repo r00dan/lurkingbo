@@ -93,6 +93,10 @@
   margin-top: 1rem;
 }
 
+.main__cvlinks a {
+  text-decoration: underline;
+}
+
 .footer {
   width: 100%;
   display: flex;
